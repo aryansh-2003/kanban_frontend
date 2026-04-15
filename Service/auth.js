@@ -6,7 +6,7 @@ export class AuthService{
     constructor(){
 
         this.instance = axios.create({
-            baseURL: 'http://localhost:8000/api/v1/users',
+            baseURL: 'https://kanban-backend-9k1l.onrender.com/api/v1/users',
             withCredentials:true
          });
         

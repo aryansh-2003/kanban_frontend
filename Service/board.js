@@ -4,7 +4,7 @@ export class BoardService{
     constructor(){
 
     this.instance = axios.create({
-     baseURL: 'http://localhost:8000/api/v1/board',
+     baseURL: 'https://kanban-backend-9k1l.onrender.com/api/v1/board',
     });
     this.instance.interceptors.request.use(
         (config) =>{

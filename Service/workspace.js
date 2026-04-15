@@ -4,7 +4,7 @@ export class WorkspaceService{
     constructor(){
 
     this.instance = axios.create({
-     baseURL: 'http://localhost:8000/api/v1/workspace',
+     baseURL: 'https://kanban-backend-9k1l.onrender.com/api/v1/workspace',
     });
     this.instance.interceptors.request.use(
         (config) =>{
