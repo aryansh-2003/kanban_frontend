@@ -70,7 +70,7 @@ export default function LoginComponent() {
           return;
         }
         dispatch(login(userData?.data?.data));
-        navigate("/Home");
+        navigate("/workspace");
       } catch (err) {
         console.error("Login error:", err);
         if (err?.response?.status === 500) {
